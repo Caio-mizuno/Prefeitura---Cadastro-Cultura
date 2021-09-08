@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rambla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+:root{
+    --white:#000547;
+    --gray:#4100d8;
+    --gradient: linear-gradient(90deg, var(--white),var(--gray));
+}
+
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0%;
+    padding:0%;
+    box-sizing:border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    
+}
+ 
+*::selection{
+    background-color:var(--white);
+    color:#fff;
+}
+
+html{
+    font-size:62.5%;
+    overflow-x: hidden;
+}
+
+body{
+      
+    width: 100%;
+    background-color: #DDE7FF; 
+}
+
+/*CABEÇALHO*/
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+
+    width:100%;
+    background:#EDEFF4;
+    box-shadow:  0 .8rem 4rem rgba(0, 0, 0, 0.692);
+    padding: .5rem 10%; 
+     
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .image{
+    position: relative;
+    
+    
+}
+
+.navbar{
+    width: 100%;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar a{
+      
+    float: right;
+    margin-top: 0%;
+    font-size: 1.7rem;
+    
+    margin-right: 20px;
+    color:var(--white);
+    
+}
+.navbar a:hover{
+    color:var(--gray);
+}
+
+section{
+    min-height: 100vh;
+    padding:0 1%;
+    box-sizing: border-box;
+
+    /* padding-top: 7.5rem;
+    padding-bottom: 2rem; */
+}
+header input{
+    position: relative;
+    display: none;
+}
+
+header label{
+    font-size: 3rem;
+    color:var(--purple);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.home{
+    display: flex;
+    align-items:stretch;
+    background-image:url("../image/body-6.png");
+    background-color: #DDE7FF; 
+    background-size: cover;
+    background-position: center;
+}
+
+/* --------------------------------- */
+
+
+/* ----------------------------------------------------------- */
+/* MURAL */
+.home > .mural{
+    /* position: absolute; */
+    display: flex;
+    box-sizing: border-box;
+    width: 50%;
+    /* height: 100%; */
+    /* background-color: #a30000; */
+    align-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    
+
+}
+/* ------------------------------------------------------ */
+.home .quadro
+{   
+    display: grid;
+    width: 100%;
+    height: max-content;
+    margin-top: 20%;
+    background: rgba(228, 226, 224, 22%);
+    /* border: 3px solid #ffffff; */
+    box-shadow: 0px 4px 4px rgba(0 0.5 0.5 / 50%);
+    border-radius: 20px;
+    align-content: space-between;
+    justify-content: space-around;
+}
+/*BOX - TITULO*/
+ .home > .mural > .quadro > .title
+{   
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 4%;
+    padding: 0 4%;
+}
+/* TÍTULO - CADASTRO */
+.home .title h3{
+    
+    
+
+    font-family: 'Rambla', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 8rem;
+    line-height: 77px;
+
+    color: #F9C74F;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 70%);
+    /* text-transform: uppercase; */
+
+}
+/*Título 2 - MUNICIPAL DE CULTURA*/
+.home .title span{
+    display: block;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: boldr;
+    font-size:  3rem;
+    line-height: 2rem;
+    letter-spacing: 0.2em;
+    color: #121F9C;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+/*TEXTO DE INFORMAÇÕES - ABAIXO DO TÍTULO*/
+.texto{
+    width: 100%;
+    padding: 0 4%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.home > .mural > .quadro > .texto > p{
+    /* margin-top: 25%;
+    position: relative;
+    width: 100%;
+    padding: 0 4%;
+    margin-bottom: 2%;
+    */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 26px;
+    text-align: justify;
+    color: #212121; 
+}
+.home > .mural > .quadro > .texto > p > span{
+    /* margin-top: 25%;
+    position: relative;
+    width: 100%;
+    padding: 0 4%;
+    margin-bottom: 2%;
+    */
+    font-family: 'Poppins';
+    font-style: bold;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 26px;
+    text-align: justify;
+    color: #121F9C; 
+}
+.home > .mural > .quadro > .texto > p > a.on-new-line:before{
+    content: '&nbsp;'; 
+    font-size:0; 
+    display:block;
+    line-height:2.5rem; 
+}
+
+
+/* --------------------------------------------------- */
+/* BOTAO ÁREA RESTRITA */
+.arbtn{
+    
+    display: inline-block;
+    padding: .8rem 3rem;
+    border-radius: 2px;
+    
+    
+    
+    background: #2c50cf4f;
+    
+    font-size: 13px;
+    text-align: justify;
+    color: #FFFFFF;
+    
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-sizing: border-box;
+} 
+.mural .botao{
+    width: 100%;
+    height: 100%;
+   
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.botao > .box{
+    flex: 1 1 30rem;
+    /* position: absolute; */
+    margin: 1.5rem;
+    
+    /* background: #205493; */
+    background: #232E9F;
+    
+    box-shadow: inset 0px -5px 9px -2px rgba(0, 0, 0, 70%);
+    border-radius: 10px;
+    padding: .5% 0;
+    /* -----------TEXTO---------------- */
+    font-family: 'Sora', sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    font-size:2.5rem;
+    line-height: 36px;
+    padding-top: 0.5rem;
+    text-align: center;
+    color: #FFFFFF;
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0,90%);
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.botao > .box:hover{
+    transform: scale(1.1);
+}
+.botao .box .btn1{
+    color: #FFFFFF;
+}
+.botao .box .btn2{
+    color: #FFFFFF;
+}
+.botao .box .btn3{
+    color: #FFFFFF;
+}
+.botao .box .btn4{
+    color: #FFFFFF;
+}
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:1200px)
+{
+    
+    html
+    {
+        font-size: 50%;
+    }
+    
+
+}
+@media (max-width:1000px)
+{
+    html
+    {
+        font-size: 40%;
+    }
+   
+    header label
+    {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+/* MENU */
+    header .navbar
+    {
+        position: absolute;
+        top:  100%;; left: 0;
+        width:100%;
+        background:#fff;
+        /* padding:1rem 2rem;  */
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        /* transform-origin: top; */
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear;
+    }
+    /* MENU */
+    header .navbar a
+    {
+        display: block;
+        float: left;
+        margin-right: 2rem 0;
+        padding: 2%;
+        font-size: 2rem;
+    }
+/* MENU */
+    header input:checked ~ .navbar
+    {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+/* MENU */
+    header input:checked ~ label::before
+    {
+        content:'\f00d';
+    }
+    /* BOX INFERIOR AO MENU */
+    .home
+    {   
+        margin-top: 5%;
+        
+    }
+    /* IMAGEM DE FUNDO */
+    .home .image img
+    {
+        width:100%;
+    }
+    /* TAMANHO DO TÍTULO */
+    .home  h3
+    {
+        font-size: 3.6rem;
+    }
+    
+    .home > .mural > .quadro > .texto > p
+    {   
+        /* margin-top: 5%; */
+        font-size: 2rem;
+    }
+    section
+    {
+        padding:-1 6%;
+        padding-top: 0.5rem;
+    }
+    /* .home .quadro
+    {
+        margin-top: 14%; 
+    } */
+    .botao
+    {
+        margin-top: 3%;
+    }
+    
+}
+@media (max-width:991px)
+{
+    html
+    {
+        font-size: 50%;
+    }
+    section
+    {
+        padding:-1 6%;
+        padding-top: 0.5rem;
+    } 
+    .home > .mural
+    {
+        justify-content: flex-start;
+        
+    }
+}
+
+
+@media (max-width:720px){
+    
+    html
+    {
+        font-size: 35%;
+        
+    }
+    /* CABEÇALHO */
+    header
+    {   
+        
+        width: 100%;
+        padding-right: 10%;
+    }
+    header .image
+    {
+        position: relative;
+        top: 0;
+        transform: scale(0.5);
+        width: 100%;
+        left: -32%;
+        
+    }
+    header .navbar
+    {   
+        display: inline-grid;
+        left: 0;
+        width: 50%;
+        padding: 0 7%;
+        position: absolute;
+        justify-items: center;
+    }
+    header .navbar a
+    {
+        font-size: 3rem;
+        /* margin-right: 25%; */
+        padding: 2%;
+    }
+    
+    section
+    {   
+        width: 100%;
+        min-height: 16vh;
+        
+        
+       
+    }
+    
+    .home .mural
+    {
+        width: 90%;
+        margin-top: 40%;
+    }
+    
+    /* ALINHAR AO CENTRO */
+    .home .quadro
+    {
+        margin-top: -10%;
+        
+    }
+    .home
+    {
+        align-items: center;
+        background-image: none;
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        margin-top: 0%;
+        flex-flow: column-reverse;
+        
+        
+    }
+    .home .mural .quadro .title {
+        margin-top: 0%;
+        height: max-content;
+        
+    }
+    .home h3{
+        font-size: 2em;
+    }
+    .home .title span{
+        line-height: 3rem;
+    }
+    .home > .mural > .quadro > .texto > p{
+        font-size: 2em;
+    }
+    
+    
+}
